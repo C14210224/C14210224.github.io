@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Help</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="/src/css/help.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Workout</span>
+            <nav class="mdl-navigation mdl-layout--large-screen-only" style="padding-left: 10px;">
+              <a class="mdl-navigation__link" href="/">Feed</a>
+              <a class="mdl-navigation__link" href="/help">Information</a>
+            </nav>
+          </div>
+        </header>
+        <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title">Workout</span>
+          <nav class="mdl-navigation" style="padding-left: 10px;">
+            <a class="mdl-navigation__link" href="/">Feed</a>
+            <a class="mdl-navigation__link" href="/help">Information</a>
+          </nav>
+        </div>
+        <main class="mdl-layout__content" style="padding-left: 10px;">
+        </main>
+      </div>
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        #container {
+            width: 60rem; /* Adjust width here */
+            max-height: auto;
+           
+        }
+        img {
+            width: 100%;
+            height: auto;
+            padding-top: 500px;
+            object-fit: cover;
+        }
+
+        .check-btn {
+
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+    </style>
+</head>
+<body>
+    <div id="container" class="card"></div>
+
+    <script>
+        window.onload = function() {
+            var container = document.getElementById('container');
+
+            // Retrieve data from sessionStorage
+            var imageSrc = sessionStorage.getItem('image');
+            var name = sessionStorage.getItem('title');
+            var description = sessionStorage.getItem('description');
+
+            container.innerHTML = `
+    <img src="${imageSrc}" class="card-img-top" alt="${name}">
+    <div class="card-body">
+        <h5 class="card-title" style="font-weight: bold;">${name}</h5>
+        <p class="card-text">${description}</p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <a href="/">
+                <button class="check-btn">✓</button>
+            </a>
+        </div>
+    </div>
+`;
+        };
+    </script>
+
+</body>
+</html>
+
+
+<script defer src="/src/js/material.min.js"></script>
+<script src="/src/js/promise.js"></script>
+<script src="/src/js/fetch.js"></script>
+<script src="/src/js/app.js"></script>
+</body>
+</html>
